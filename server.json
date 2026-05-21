@@ -1,0 +1,23 @@
+{
+  "name": "ava-genesis",
+  "version": "2.0.0",
+  "description": "ERC-20 token deployment for AI agents via MCP. Free Sepolia testnet. $10 flat per mainnet deploy on Ethereum, Base, BNB Chain, Polygon.",
+  "endpoint": "https://avagenesis.com/api/mcp",
+  "protocol": "mcp/2024-11-05",
+  "transport": ["streamable-http", "sse"],
+  "pricing": {
+    "freeTier": true,
+    "testnet": "Free - unlimited Sepolia deployments",
+    "mainnet": "$10 per deployment + gas"
+  },
+  "chains": ["ethereum", "base", "bnb", "polygon", "sepolia"],
+  "auth": {
+    "type": "apiKey",
+    "description": "Obtain free via ava_create_api_key tool or POST https://avagenesis.com/api/agents/keys"
+  },
+  "links": {
+    "website": "https://avagenesis.com",
+    "docs": "https://avagenesis.com/docs/agents",
+    "glama": "https://glama.ai/mcp/connectors/com.avagenesis/ava-genesis-agent-api"
+  }
+}
